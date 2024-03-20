@@ -3,7 +3,7 @@
   "url_hub": "http://localhost:4444/wd/hub",
   "username": "khalidkassom59@gmail.com",
   "password": "Khalid@22",
-   "grid": false,
+   "grid": true,
   "bookToRead": "Chain of Gold",
   "bookToDiscuss": "chain of gold",
   "topic": "discussing the book",
