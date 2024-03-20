@@ -7,8 +7,8 @@ class AuthAPI:
     @staticmethod
     def login(email, password):
         login_url = f'{AuthAPI.BASE_URL}/login'
-        payload = {'email': 'khalidkassom59@@gmail.com', 'password':'khalid@22' }
-        headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+        payload = {'email': 'khalidkassom59@gmail.com', 'password':'khalid@22' }
+       # headers = {'Content-Type': 'application/x-www-form-urlencoded'}
 
-        response = requests.post(login_url, data=payload, headers=headers)
+        response = requests.post(login_url, data=payload)
         return response

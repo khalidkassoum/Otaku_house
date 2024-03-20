@@ -6,9 +6,9 @@ from tests.test import GridTest
 
 class TestAuthAPI(GridTest):
 
-    def test_login_success(self, cap):
-       # self.driver = self.browser.get_driver(cap)
-        response = AuthAPI.login('khalidkassom59@@gmail.com', 'khalid@22')
+    def test_login_success(self,cap):
+        self.driver = self.browser.get_driver(cap)
+        response = AuthAPI.login('khalidkassom59@gmail.com', 'khalid@22')
         self.assertEqual(response.status_code, 200)
 
 
