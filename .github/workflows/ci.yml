@@ -34,4 +34,4 @@ jobs:
 
     # Run tests
     - name: Run tests
-      run: python -m unittest discover tests.login_page_tests
+      run: python -m unittest  tests.login_page_tests
