@@ -39,4 +39,4 @@ jobs:
     # Run tests
     - name: Run tests
       run: |
-        python -m unittest tests/review_item_api.py
+        python -m unittest tests/login_page_tests.py
