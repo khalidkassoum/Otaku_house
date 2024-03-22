@@ -36,6 +36,10 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
+    - name: List tests directory
+      run: ls tests
+
+
     # Run tests
     - name: Run tests
       run: |
