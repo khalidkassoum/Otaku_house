@@ -1,14 +1,6 @@
+from json.decoder import JSONDecodeError
 import requests
-import json
-from os.path import dirname, join
-from infra.Handle_api import Handler_api
-from jira import JIRA
-import os
-
-import random
-from dotenv import load_dotenv
-load_dotenv(".env")
-
+from infra.infra_api.Handle_api import Handler_api
 class OtakuAPI:
 
    def __init__(self):
@@ -42,8 +34,3 @@ class OtakuAPI:
 
 
 
-
-   def choose_random_value(self, list_value):
-        if not list_value:
-            return None
-        return random.choice(list_value)

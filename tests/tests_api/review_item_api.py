@@ -1,6 +1,6 @@
 import unittest
-from logic.login_logic import LoginPage
-from logic.review_item_api import OtakuReviewItem
+from logic.logic_api.login_logic import LoginPage
+from logic.logic_api.review_item_api import OtakuReviewItem
 
 
 class TestReview_item_test(unittest.TestCase):

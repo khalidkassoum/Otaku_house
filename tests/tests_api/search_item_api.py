@@ -1,5 +1,5 @@
 import unittest
-from logic.search_item import SearchItem
+from logic.logic_api.search_item import SearchItem
 class TestOtakuHouseHomePage(unittest.TestCase):
 
     def setUp(self):

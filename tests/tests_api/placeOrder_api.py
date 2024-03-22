@@ -1,7 +1,5 @@
 import unittest
-from logic.login_logic import LoginPage
-from logic.review_item_api import OtakuReviewItem
-from logic.place_order_api import PlaceOrder
+from logic.logic_api.place_order_api import PlaceOrder
 
 
 

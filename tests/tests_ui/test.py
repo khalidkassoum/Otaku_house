@@ -1,6 +1,5 @@
-import concurrent
 import unittest
-from infra.browser_wrapper import BrowserWrapper
+from infra.infra_ui.browser_wrapper import BrowserWrapper
 
 
 class GridTest(unittest.TestCase):

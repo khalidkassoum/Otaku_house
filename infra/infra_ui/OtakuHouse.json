@@ -1,10 +1,10 @@
 {
-  "url": "http://127.0.0.1:8000/#/",
+  "url": "http://127.0.0.1:8000/",
   "url_hub": "http://localhost:4444/wd/hub",
   "username": "khalidkassom59@gmail.com",
   "password": "Khalid@22",
    "grid": true,
-  "bookToRead": "Chain of Gold",
+  "product_name": "naruto shippuden",
   "bookToDiscuss": "chain of gold",
   "topic": "discussing the book",
   "comment": "the book is very intresting",

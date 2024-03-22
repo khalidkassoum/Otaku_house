@@ -1,4 +1,4 @@
-from infra.api_wrapper import OtakuAPI
+from infra.infra_api.api_wrapper import OtakuAPI
 
 
 class SearchItem(OtakuAPI):

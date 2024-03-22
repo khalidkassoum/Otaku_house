@@ -1,5 +1,5 @@
 
-from infra.handle import Handler
+from infra.infra_ui.handle import Handler
 
 from selenium import webdriver
 import concurrent.futures
@@ -11,9 +11,8 @@ class BrowserWrapper:
         chrome_cap.capabilities['platformName'] = 'windows'
         fireFox_cap = webdriver.FirefoxOptions()
         fireFox_cap.capabilities['platformName'] = 'windows'
-        edge_cap = webdriver.EdgeOptions()
-        edge_cap.capabilities['platformName'] = 'windows'
-        cap_list = [chrome_cap, fireFox_cap, edge_cap]
+
+        cap_list = [chrome_cap, fireFox_cap]
         return cap_list
 
     def get_grid(self):

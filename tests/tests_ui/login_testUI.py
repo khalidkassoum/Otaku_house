@@ -1,5 +1,4 @@
-import unittest
-from logic.loginPageUI import loginPage
+from logic.logic_ui.loginPageUI import loginPage
 from test import GridTest
 class gridtest_LOGIN(GridTest):
 
