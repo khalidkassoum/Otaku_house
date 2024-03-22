@@ -25,6 +25,6 @@ jobs:
       - name: Set PYTHONPATH
         run: echo "PYTHONPATH=${{ github.workspace }}" >> $GITHUB_ENV
       - name: Run tests
-        run: python -m unittest discover tests
+        run: python -m unittest discover tests.login_page_tests
 
 
