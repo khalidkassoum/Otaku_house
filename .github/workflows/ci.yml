@@ -12,7 +12,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
-      tests_path: '\Users\Owner\PycharmProjects\Otaku_house\tests'
+      tests_path: 'C\Users\Owner\PycharmProjects\Otaku_house\tests\login_page_tests.py'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
