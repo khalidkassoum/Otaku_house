@@ -12,8 +12,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
-      tests_path: 'C\Users\Owner\PycharmProjects\Otaku_house\tests\login_page_tests.py'
-
+       test_path: '\Users\Owner\PycharmProjects\Otaku_house\tests\login_page_tests.py'
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
