@@ -6,7 +6,7 @@ pipeline {
         // Define the project's root directory
         PROJECT_ROOT = "C:\\Users\\Owner\\PycharmProjects\\Otaku_house"
         // Define the path to the Python executable
-        PYTHON_PATH = "C:\\Users\\Owner\\PycharmProjects\\Otaku_house\\.venv\\Scripts\\python.exe"
+        PYTHON_PATH = "C:\\Users\\Owner\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
     }
     stages {
         stage('Preparation') {
@@ -31,15 +31,17 @@ pipeline {
                 }
             }
         }
+
         stage('Run Tests') {
-        steps {
-        script {
-            // Activate the virtual environment
-            bat "call ${VENV_DIR}\\Scripts\\activate"
-            // Set PYTHONPATH and run the tests in one command to ensure the environment variable is applied
-            bat "set PYTHONPATH=%PYTHONPATH%;C:\\Users\\Owner\\PycharmProjects\\Otaku_house && call ${VENV_DIR}\\Scripts\\python C:\\Users\\Owner\\PycharmProjects\\Otaku_house\\tests\\tests_api\\placeOrder_api.py"
+            steps {
+                script {
+                    // Activate the virtual environment
+                    bat "call ${VENV_DIR}\\Scripts\\activate"
+                    // Set PYTHONPATH and run the tests in one command to ensure the environment variable is applied
+                    bat "set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT} && call ${VENV_DIR}\\Scripts\\python ${PROJECT_ROOT}\\tests\\tests_api\\placeOrder_api.py"
+                }
+            }
         }
-    }
 }
 
 

@@ -21,11 +21,18 @@ class OtakuAPI:
         self.headers2 = {
              "Authorization": f"Bearer {self.token2}"
         }
+        self.updateProfileToken="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNzk3NzgxLCJqdGkiOiI1MjFjYTM5MWIxODE0ZDkyYjhiMDZjMjZjYWVhMjY2MyIsInVzZXJfaWQiOjh9.N2DQiPUUNLlvR1i2bD5oY8rVdcohs764X2qRe67KRXo"
+        self.headersUpdate = {
+             "Authorization": f"Bearer {self.updateProfileToken}"
+        }
         self.rating = self.config['rating_product']
         self.review_txt = self.config['review_text']
         self.order_id = self.config['order_id']
         self.user_id = self.config['user_id']
         self.request = requests
+        self.new_Name=self.config['new_username']
+        self.new_mail=self.config['new_mail']
+        self.new_password=self.config['new_password']
         self.parallel = True
 
    def api_get_request(self, url):
