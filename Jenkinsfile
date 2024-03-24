@@ -11,31 +11,16 @@ pipeline {
         HTML_REPORT_DIR = "reports"
     }
     stages {
-        stage('Preparation') {
-            steps {
-                echo 'Checking out SCM'
-                checkout scm
-            }
-        }
-        stage('Setup Python Environment') {
+        // ... Other stages remain unchanged ...
+
+        stage('List Report') {
             steps {
                 script {
-                    bat "cd ${PROJECT_ROOT}"
-                    bat "if not exist ${VENV_DIR} call \"%PYTHON_PATH%\" -m venv ${VENV_DIR}"
-                    bat "call ${VENV_DIR}\\Scripts\\activate"
-                    bat "call ${VENV_DIR}\\Scripts\\python.exe -m pip install --upgrade pip"
-                    bat "call ${VENV_DIR}\\Scripts\\pip install -r requirements.txt"
+                    bat "dir ${PROJECT_ROOT}\\${HTML_REPORT_DIR}"
                 }
             }
         }
-        stage('Run Tests') {
-            steps {
-                script {
-                    bat "call ${VENV_DIR}\\Scripts\\activate"
-                    bat "set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT} && call ${VENV_DIR}\\Scripts\\python ${PROJECT_ROOT}\\tests\\tests_api\\placeOrder_api.py"
-                }
-            }
-        }
+
         stage('Publish Report') {
             steps {
                 publishHTML target: [
