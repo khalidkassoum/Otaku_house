@@ -37,13 +37,12 @@ pipeline {
             }
         }
         stage('List Report') {
-           steps {
-               script {
-                   bat "dir ${PROJECT_ROOT}\\${HTML_REPORT_DIR}"
-               }
-           }
+            steps {
+                script {
+                    bat "dir ${PROJECT_ROOT}\\${HTML_REPORT_DIR}"
+                }
+            }
         }
-
         stage('Publish Report') {
             steps {
                 publishHTML target: [
@@ -56,11 +55,10 @@ pipeline {
                 ]
             }
         }
-    }
         stage('Archive Reports') {
-             steps {
-                    archiveArtifacts artifacts: "${HTML_REPORT_DIR}/*", allowEmptyArchive: true
-             }
+            steps {
+                archiveArtifacts artifacts: "${HTML_REPORT_DIR}/*", allowEmptyArchive: true
+            }
         }
-
+    }
 }
