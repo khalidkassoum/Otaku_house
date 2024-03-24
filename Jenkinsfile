@@ -8,7 +8,7 @@ pipeline {
         // Define the path to the Python executable
         PYTHON_PATH = "C:\\Users\\Owner\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
         // Define the directory where the HTML report is generated
-        HTML_REPORT_DIR = "my_report"
+        HTML_REPORT_DIR = "reports"
     }
     stages {
         stage('Preparation') {
