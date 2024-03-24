@@ -38,21 +38,14 @@ pipeline {
         }
         stage('Publish Report') {
             steps {
-                script {
-                    // Check if publishHTML step is available
-                    if (this.binding.hasVariable('publishHTML')) {
-                        publishHTML([
-                            allowMissing: false,
-                            alwaysLinkToLastBuild: true,
-                            keepAll: true,
-                            reportDir: "${PROJECT_ROOT}\\${HTML_REPORT_DIR}",
-                            reportFiles: 'report.html',
-                            reportName: "HTML Report"
-                        ])
-                    } else {
-                        echo 'publishHTML step not available, skipping report publication.'
-                    }
-                }
+                publishHTML target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: "${PROJECT_ROOT}\\${HTML_REPORT_DIR}",
+                    reportFiles: 'report.html',
+                    reportName: "HTML Report"
+                ]
             }
         }
     }
