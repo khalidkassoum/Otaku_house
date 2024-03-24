@@ -429,10 +429,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 24-Mar-2024 at 17:35:44 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 24-Mar-2024 at 17:38:54 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Summary</h2>
-    <p>5 tests ran in 13.85 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">4 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>0 tests ran in 0.01 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -442,51 +442,4 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable" col="duration">Duration</th>
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/tests_api/home_page_test.py::TestOtakuHouseHomePage::test_get_home_page</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;home_page_test.TestOtakuHouseHomePage testMethod=test_get_home_page&gt;<br/><br/>    def setUp(self):<br/>&gt;       self.home_page = OtakuHouseHomePage()<br/><br/>C:\Users\Owner\PycharmProjects\Otaku_house\tests\tests_api\home_page_test.py:6: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>C:\Users\Owner\PycharmProjects\Otaku_house\logic\logic_api\home_page_logic.py:6: in __init__<br/>    super().__init__()<br/>infra\infra_api\api_wrapper.py:9: in __init__<br/>    self.config = self.myHandler.read_config_data()<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;infra.infra_api.Handle_api.Handler_api object at 0x00000169BBEF7950&gt;<br/>file = &#x27;Otaku_api.json&#x27;<br/><br/>    def read_config_data(self, file=&quot;Otaku_api.json&quot;):<br/>        here = dirname(__file__)<br/>        filename = join(here, file)<br/>&gt;       with open(filename, &#x27;r&#x27;) as file:<br/><span class="error">E       FileNotFoundError: [Errno 2] No such file or directory: &#x27;C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\OTAKUU\\infra\\infra_api\\Otaku_api.json&#x27;</span><br/><br/>infra\infra_api\Handle_api.py:11: FileNotFoundError<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/tests_api/home_page_test.py::TestOtakuHouseHomePage::test_get_second_home_page</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;home_page_test.TestOtakuHouseHomePage testMethod=test_get_second_home_page&gt;<br/><br/>    def setUp(self):<br/>&gt;       self.home_page = OtakuHouseHomePage()<br/><br/>C:\Users\Owner\PycharmProjects\Otaku_house\tests\tests_api\home_page_test.py:6: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>C:\Users\Owner\PycharmProjects\Otaku_house\logic\logic_api\home_page_logic.py:6: in __init__<br/>    super().__init__()<br/>infra\infra_api\api_wrapper.py:9: in __init__<br/>    self.config = self.myHandler.read_config_data()<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;infra.infra_api.Handle_api.Handler_api object at 0x00000169BBEF7C20&gt;<br/>file = &#x27;Otaku_api.json&#x27;<br/><br/>    def read_config_data(self, file=&quot;Otaku_api.json&quot;):<br/>        here = dirname(__file__)<br/>        filename = join(here, file)<br/>&gt;       with open(filename, &#x27;r&#x27;) as file:<br/><span class="error">E       FileNotFoundError: [Errno 2] No such file or directory: &#x27;C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\OTAKUU\\infra\\infra_api\\Otaku_api.json&#x27;</span><br/><br/>infra\infra_api\Handle_api.py:11: FileNotFoundError<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/tests_api/home_page_test.py::TestOtakuHouseHomePage::test_searching_on_product</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;home_page_test.TestOtakuHouseHomePage testMethod=test_searching_on_product&gt;<br/><br/>    def setUp(self):<br/>&gt;       self.home_page = OtakuHouseHomePage()<br/><br/>C:\Users\Owner\PycharmProjects\Otaku_house\tests\tests_api\home_page_test.py:6: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>C:\Users\Owner\PycharmProjects\Otaku_house\logic\logic_api\home_page_logic.py:6: in __init__<br/>    super().__init__()<br/>infra\infra_api\api_wrapper.py:9: in __init__<br/>    self.config = self.myHandler.read_config_data()<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;infra.infra_api.Handle_api.Handler_api object at 0x00000169BBF84260&gt;<br/>file = &#x27;Otaku_api.json&#x27;<br/><br/>    def read_config_data(self, file=&quot;Otaku_api.json&quot;):<br/>        here = dirname(__file__)<br/>        filename = join(here, file)<br/>&gt;       with open(filename, &#x27;r&#x27;) as file:<br/><span class="error">E       FileNotFoundError: [Errno 2] No such file or directory: &#x27;C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\OTAKUU\\infra\\infra_api\\Otaku_api.json&#x27;</span><br/><br/>infra\infra_api\Handle_api.py:11: FileNotFoundError<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/tests_ui/UPDATEprofile_test.py::gridtest_review::test_update_profile</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;unittest.case._Outcome object at 0x00000169BBF85AC0&gt;<br/>test_case = &lt;UPDATEprofile_test.gridtest_review testMethod=test_update_profile&gt;<br/>subTest = False<br/><br/>    @contextlib.contextmanager<br/>    def testPartExecutor(self, test_case, subTest=False):<br/>        old_success = self.success<br/>        self.success = True<br/>        try:<br/>&gt;           yield<br/><br/>C:\Users\Owner\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py:58: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>C:\Users\Owner\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py:634: in run<br/>    self._callTestMethod(testMethod)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;UPDATEprofile_test.gridtest_review testMethod=test_update_profile&gt;<br/>method = &lt;bound method gridtest_review.test_update_profile of &lt;UPDATEprofile_test.gridtest_review testMethod=test_update_profile&gt;&gt;<br/><br/>    def _callTestMethod(self, method):<br/>&gt;       if method() is not None:<br/><span class="error">E       TypeError: gridtest_review.test_update_profile() missing 1 required positional argument: &#x27;cap&#x27;</span><br/><br/>C:\Users\Owner\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py:589: TypeError<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/tests_ui/UPDATEprofile_test.py::gridtest_review::test_run_MyTest</td>
-          <td class="col-duration">13.19</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Test run encountered an exception: [Errno 2] No such file or directory: &#x27;C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\OTAKUU\\infra\\infra_api\\Otaku_api.json&#x27;
-Test run encountered an exception: [Errno 2] No such file or directory: &#x27;C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\OTAKUU\\infra\\infra_api\\Otaku_api.json&#x27;
-<br/></div></td></tr></tbody></table></body></html>
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead></table></body></html>
