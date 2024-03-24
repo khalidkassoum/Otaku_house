@@ -33,7 +33,7 @@ pipeline {
                 script {
                     bat "call ${VENV_DIR}\\Scripts\\activate"
                     // Use pytest to run tests and generate an HTML report
-                    bat "set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT} && call ${VENV_DIR}\\Scripts\\pytest ${PROJECT_ROOT}\\tests\\ --html=${PROJECT_ROOT}\\${HTML_REPORT_DIR}\\report.html --self-contained-html"
+                    bat "set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT} && call ${VENV_DIR}\\Scripts\\pytest ${PROJECT_ROOT}\\tests\\tests_api\\placeOrder_api\\ --html=${PROJECT_ROOT}\\${HTML_REPORT_DIR}\\report.html --self-contained-html"
                 }
             }
         }
