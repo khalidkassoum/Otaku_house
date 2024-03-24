@@ -32,7 +32,8 @@ pipeline {
             steps {
                 script {
                     bat "call ${VENV_DIR}\\Scripts\\activate"
-                    bat "set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT} && call ${VENV_DIR}\\Scripts\\python ${PROJECT_ROOT}\\tests\\tests_api\\login_page_tests.py"
+                    // Use pytest to run tests and generate an HTML report
+                    bat "set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT} && call ${VENV_DIR}\\Scripts\\pytest ${PROJECT_ROOT}\\tests\\ --html=${PROJECT_ROOT}\\${HTML_REPORT_DIR}\\report.html --self-contained-html"
                 }
             }
         }
@@ -56,13 +57,12 @@ pipeline {
             }
         }
         stage('Verify Report') {
-    steps {
-        script {
-            bat "type ${PROJECT_ROOT}\\${HTML_REPORT_DIR}\\report.html"
+            steps {
+                script {
+                    bat "type ${PROJECT_ROOT}\\${HTML_REPORT_DIR}\\report.html"
+                }
+            }
         }
-    }
-}
-
         stage('Archive Reports') {
             steps {
                 archiveArtifacts artifacts: "${HTML_REPORT_DIR}/*", allowEmptyArchive: true
