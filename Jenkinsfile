@@ -57,4 +57,10 @@ pipeline {
             }
         }
     }
+        stage('Archive Reports') {
+             steps {
+                    archiveArtifacts artifacts: "${HTML_REPORT_DIR}/*", allowEmptyArchive: true
+             }
+        }
+
 }
