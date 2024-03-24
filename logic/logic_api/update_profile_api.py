@@ -9,4 +9,5 @@ class UpdateProfile(OtakuAPI):
     self.json_data = {"id": id, "name": name, "email": mail, "password": password}
     self.response = self.request.put(f'{self.url[:-2]}api/users/profile/update/', json=self.json_data,
                                      headers=self.headersUpdate)
+    print(f'Choosing Product Response JSON: {self.response.json()}')
     return self.response

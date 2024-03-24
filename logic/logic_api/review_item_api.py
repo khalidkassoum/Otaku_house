@@ -12,4 +12,5 @@ class OtakuReviewItem(OtakuAPI):
         self.json = {"rating": rate, "comment": review_txt}
 
         self.response = self.request.post(f'{self.url[:-2]}api/products/{id_product}/reviews/', json=self.json,headers=self.headers)
+        print(f'Choosing Product Response JSON: {self.response.json()}')
         return self.response
