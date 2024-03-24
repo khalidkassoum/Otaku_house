@@ -55,6 +55,14 @@ pipeline {
                 ]
             }
         }
+        stage('Verify Report') {
+    steps {
+        script {
+            bat "type ${PROJECT_ROOT}\\${HTML_REPORT_DIR}\\report.html"
+        }
+    }
+}
+
         stage('Archive Reports') {
             steps {
                 archiveArtifacts artifacts: "${HTML_REPORT_DIR}/*", allowEmptyArchive: true
