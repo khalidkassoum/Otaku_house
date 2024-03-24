@@ -14,8 +14,8 @@ class TestOtakuHouseLoginPage(unittest.TestCase):
         self.assertEqual(self.response.status_code, 200)
 
     def test_login_user_to_account_with_valid_mail_and_password(self):
-        self.response = self.otaku_house.login_user_to_account(self.otaku_house.user_mail,
-                                                               self.otaku_house.user_password)
+        self.response = self.otaku_house.login_user_to_account(self.otaku_house.mymail,
+                                                               self.otaku_house.mypassword)
         self.assertEqual(self.response, 200)
 
 

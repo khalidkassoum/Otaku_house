@@ -11,19 +11,19 @@ class TestOtakuHouseProfilePage(unittest.TestCase):
         self.data = None
 
     def test_update_profile_name(self):
-        self.response = self.myProfile.profileUpdating(self.myProfile.user_id, self.myProfile.new_Name, self.myProfile.user_mail, self.myProfile.user_password)
+        self.response = self.myProfile.profileUpdating(self.myProfile.user_id, self.myProfile.new_Name, self.myProfile.mymail, self.myProfile.mypassword)
         self.assertEqual(self.response.status_code, 200)
 
 
     def test_update_profile_mail(self):
-        self.response = self.myProfile.profileUpdating(self.myProfile.user_id, self.myProfile.user_name,
+        self.response = self.myProfile.profileUpdating(self.myProfile.user_id, self.myProfile.myname,
                                                          self.myProfile.new_mail,
-                                                         self.myProfile.user_password)
+                                                         self.myProfile.mypassword)
         self.assertEqual(self.response.status_code, 200)
 
     def test_update_profile_password(self):
-        self.response = self.myProfile.profileUpdating(self.myProfile.user_id, self.myProfile.user_name,
-                                                         self.myProfile.user_mail,
+        self.response = self.myProfile.profileUpdating(self.myProfile.user_id, self.myProfile.myname,
+                                                         self.myProfile.mymail,
                                                          self.myProfile.new_password)
         self.assertEqual(self.response.status_code, 200)
 

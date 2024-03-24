@@ -8,9 +8,9 @@ class OtakuAPI:
         self.myHandler = Handler_api()
         self.config = self.myHandler.read_config_data()
         self.url = self.config['url']
-        self.user_name = self.config['user_name']
-        self.user_mail = self.config['login_mail']
-        self.user_password = self.config['login_password']
+        self.myname = self.config['user_name']
+        self.mymail = self.config['login_mail']
+        self.mypassword = self.config['login_password']
         self.searching_keyword = self.config['keyword_for_search'].lower()
         self.product_id = self.config['product_id']
         self.token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNzA3MDczLCJqdGkiOiI2MTVhNWM1MTljOGQ0MmFjODM4YWI0MGExYzg2YTE2ZSIsInVzZXJfaWQiOjh9.dpK02iVtvtLn2VeZkFRngY4pWzYvGzUj34F1uYZRJis"
@@ -33,7 +33,6 @@ class OtakuAPI:
         self.new_Name=self.config['new_username']
         self.new_mail=self.config['new_mail']
         self.new_password=self.config['new_password']
-        self.parallel = True
 
    def api_get_request(self, url):
         self.response = self.request.get(url)
