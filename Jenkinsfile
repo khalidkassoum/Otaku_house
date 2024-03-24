@@ -20,15 +20,10 @@ pipeline {
         stage('Setup Python Environment') {
             steps {
                 script {
-                    // Navigate to project's root directory
                     bat "cd ${PROJECT_ROOT}"
-                    // Set up virtual environment if it doesn't exist
                     bat "if not exist ${VENV_DIR} call \"%PYTHON_PATH%\" -m venv ${VENV_DIR}"
-                    // Activate virtual environment
                     bat "call ${VENV_DIR}\\Scripts\\activate"
-                    // Upgrade pip to the latest version
                     bat "call ${VENV_DIR}\\Scripts\\python.exe -m pip install --upgrade pip"
-                    // Install requirements
                     bat "call ${VENV_DIR}\\Scripts\\pip install -r requirements.txt"
                 }
             }
@@ -36,23 +31,28 @@ pipeline {
         stage('Run Tests') {
             steps {
                 script {
-                    // Activate the virtual environment
                     bat "call ${VENV_DIR}\\Scripts\\activate"
-                    // Set PYTHONPATH and run the tests in one command to ensure the environment variable is applied
                     bat "set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT} && call ${VENV_DIR}\\Scripts\\python ${PROJECT_ROOT}\\tests\\tests_api\\placeOrder_api.py"
                 }
             }
         }
         stage('Publish Report') {
             steps {
-                publishHTML([
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: "${PROJECT_ROOT}\\${HTML_REPORT_DIR}",
-                    reportFiles: 'report.html',
-                    reportName: "HTML Report"
-                ])
+                script {
+                    // Check if publishHTML step is available
+                    if (this.binding.hasVariable('publishHTML')) {
+                        publishHTML([
+                            allowMissing: false,
+                            alwaysLinkToLastBuild: true,
+                            keepAll: true,
+                            reportDir: "${PROJECT_ROOT}\\${HTML_REPORT_DIR}",
+                            reportFiles: 'report.html',
+                            reportName: "HTML Report"
+                        ])
+                    } else {
+                        echo 'publishHTML step not available, skipping report publication.'
+                    }
+                }
             }
         }
     }
