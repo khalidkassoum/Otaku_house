@@ -7,6 +7,8 @@ pipeline {
         PROJECT_ROOT = "C:\\Users\\Owner\\PycharmProjects\\Otaku_house"
         // Define the path to the Python executable
         PYTHON_PATH = "C:\\Users\\Owner\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+        // Define the directory where the HTML report is generated
+        HTML_REPORT_DIR = "my_report"
     }
     stages {
         stage('Preparation') {
@@ -39,6 +41,18 @@ pipeline {
                     // Set PYTHONPATH and run the tests in one command to ensure the environment variable is applied
                     bat "set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT} && call ${VENV_DIR}\\Scripts\\python ${PROJECT_ROOT}\\tests\\tests_api\\placeOrder_api.py"
                 }
+            }
+        }
+        stage('Publish Report') {
+            steps {
+                publishHTML([
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: "${PROJECT_ROOT}\\${HTML_REPORT_DIR}",
+                    reportFiles: 'report.html',
+                    reportName: "HTML Report"
+                ])
             }
         }
     }
