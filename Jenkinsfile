@@ -32,7 +32,7 @@ pipeline {
             steps {
                 script {
                     bat "call ${VENV_DIR}\\Scripts\\activate"
-                    bat "set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT} && call ${VENV_DIR}\\Scripts\\python ${PROJECT_ROOT}\\TestRunner.py"
+                    bat "set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT} && call ${VENV_DIR}\\Scripts\\python ${PROJECT_ROOT}\\test_Runner.py"
                 }
             }
         }
