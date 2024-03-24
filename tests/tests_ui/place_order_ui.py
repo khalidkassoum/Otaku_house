@@ -1,9 +1,9 @@
 from logic.logic_ui.loginPageUI import loginPage
 from logic.logic_ui.place_order_UI import Place_order
-from test import GridTest
+from tests.tests_ui.test import GridTest
 class gridtest_PlaceOrder(GridTest):
 
-    def test_placeOrder(self,cap):
+    def placeOrder(self,cap):
 
         self.driver = self.browser.get_driver(cap)
         self.Mylogin = loginPage(self.driver)
@@ -16,6 +16,6 @@ class gridtest_PlaceOrder(GridTest):
 
         self.grid = self.browser.get_grid()
         if self.grid:
-            self.browser.test_run_grid_parallel(self.test_placeOrder)
+            self.browser.test_run_grid_parallel(self.placeOrder)
         else:
-            self.browser.test_run_grid_serial(self.test_placeOrder)
+            self.browser.test_run_grid_serial(self.placeOrder)

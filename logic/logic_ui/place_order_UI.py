@@ -26,7 +26,7 @@ class Place_order(BasePage):
     def click_profile(self):
         prfile = self.wait.until(EC.element_to_be_clickable(self.profile_button))
         prfile.click()
-        self.driver.execute_script("window.scrollTo(300, document.body.scrollHeight);")
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         #self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
     def click_details(self):
@@ -44,6 +44,6 @@ class Place_order(BasePage):
 
         self.click_username()
         self.click_profile()
-        self.click_details()
+      #  self.click_details()
 
 

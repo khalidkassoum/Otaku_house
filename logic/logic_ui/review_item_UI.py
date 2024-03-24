@@ -25,7 +25,8 @@ class ReviewMyItem(BasePage):
         item_button.click()
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
+        self.driver.execute_script("window.scrollBy(0, 300)")
+        self.driver.execute_script("window.scrollBy(300, 1500)")
 
     def validate_success_message(self):
         success_message_text = self.wait.until(

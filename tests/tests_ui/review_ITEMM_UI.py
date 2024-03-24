@@ -1,9 +1,9 @@
 from logic.logic_ui.review_item_UI import ReviewMyItem
-from test import GridTest
+from tests.tests_ui.test import GridTest
 from infra.infra_api.Handle_api import Handler_api
 class gridtest_review(GridTest):
 
-    def test_review(self,cap):
+    def review_product(self,cap):
         self.driver = self.browser.get_driver(cap)
         self.myReview=ReviewMyItem(self.driver)
         self.myReview.review_flow()
@@ -17,6 +17,6 @@ class gridtest_review(GridTest):
 
         self.grid = self.browser.get_grid()
         if self.grid:
-            self.browser.test_run_grid_parallel(self.test_review)
+            self.browser.test_run_grid_parallel(self.review_product)
         else:
-            self.browser.test_run_grid_serial(self.test_review)
+            self.browser.test_run_grid_serial(self.review_product)
