@@ -31,7 +31,6 @@ pipeline {
                 }
             }
         }
-
         stage('Run Tests') {
             steps {
                 script {
@@ -42,8 +41,5 @@ pipeline {
                 }
             }
         }
+    }
 }
-
-
-            }
- }
