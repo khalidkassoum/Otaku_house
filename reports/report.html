@@ -243,10 +243,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 25-Mar-2024 at 14:26:23 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 25-Mar-2024 at 14:33:28 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Summary</h2>
-    <p>1 tests ran in 0.31 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>10 tests ran in 44.20 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">9 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -257,13 +257,129 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/tests_api/placeOrder_api.py::Test_place_order::test_place_order</td>
-          <td class="col-duration">0.04</td>
+          <td class="col-result">Failed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/test_Runner.py::TestReview_item_test::test_review_item</td>
+          <td class="col-duration">0.01</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;_id&#x27;: 74, &#x27;orderItems&#x27;: [{&#x27;_id&#x27;: 79, &#x27;name&#x27;: &#x27;Bleach - Ichigo Kurosaki Honor T-Shirt&#x27;, &#x27;qty&#x27;: 1, &#x27;price&#x27;: &#x27;1499.00&#x27;, &#x27;image&#x27;: &#x27;/media/images/ichigo_shirt.jpg&#x27;, &#x27;product&#x27;: 21, &#x27;order&#x27;: 74}], &#x27;shippingAddress&#x27;: {&#x27;_id&#x27;: 73, &#x27;address&#x27;: &#x27;sakhnin&#x27;, &#x27;city&#x27;: &#x27;sakhnin&#x27;, &#x27;postalCode&#x27;: &#x27;308100&#x27;, &#x27;country&#x27;: &#x27;israel&#x27;, &#x27;shippingPrice&#x27;: None, &#x27;order&#x27;: 74}, &#x27;User&#x27;: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False}, &#x27;paymentMethod&#x27;: &#x27;PayPal&#x27;, &#x27;taxPrice&#x27;: &#x27;122.92&#x27;, &#x27;shippingPrice&#x27;: &#x27;0.00&#x27;, &#x27;totalPrice&#x27;: &#x27;1621.92&#x27;, &#x27;isPaid&#x27;: False, &#x27;paidAt&#x27;: None, &#x27;isDeliver&#x27;: False, &#x27;deliveredAt&#x27;: None, &#x27;createdAt&#x27;: &#x27;2024-03-25T17:56:23.369830+05:30&#x27;, &#x27;user&#x27;: 8}
-<br/></div></td></tr></tbody></table></body></html>
+            <div class="log">self = &lt;tests.tests_api.review_item_api.TestReview_item_test testMethod=test_review_item&gt;<br/><br/>    def test_review_item(self):<br/>        self.response = self.otaku_house_review.choosing_product(self.otaku_house_review.rating,self.otaku_house_review.review_txt,self.otaku_house_review.product_id)<br/>&gt;       self.assertEqual(self.response.status_code, 200)<br/><span class="error">E       AssertionError: 400 != 200</span><br/><br/>tests\tests_api\review_item_api.py:21: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;detail&#x27;: &#x27;Product already reviewed&#x27;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/test_Runner.py::Test_place_order::test_place_order</td>
+          <td class="col-duration">0.03</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;_id&#x27;: 75, &#x27;orderItems&#x27;: [{&#x27;_id&#x27;: 80, &#x27;name&#x27;: &#x27;Bleach - Ichigo Kurosaki Honor T-Shirt&#x27;, &#x27;qty&#x27;: 1, &#x27;price&#x27;: &#x27;1499.00&#x27;, &#x27;image&#x27;: &#x27;/media/images/ichigo_shirt.jpg&#x27;, &#x27;product&#x27;: 21, &#x27;order&#x27;: 75}], &#x27;shippingAddress&#x27;: {&#x27;_id&#x27;: 74, &#x27;address&#x27;: &#x27;sakhnin&#x27;, &#x27;city&#x27;: &#x27;sakhnin&#x27;, &#x27;postalCode&#x27;: &#x27;308100&#x27;, &#x27;country&#x27;: &#x27;israel&#x27;, &#x27;shippingPrice&#x27;: None, &#x27;order&#x27;: 75}, &#x27;User&#x27;: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False}, &#x27;paymentMethod&#x27;: &#x27;PayPal&#x27;, &#x27;taxPrice&#x27;: &#x27;122.92&#x27;, &#x27;shippingPrice&#x27;: &#x27;0.00&#x27;, &#x27;totalPrice&#x27;: &#x27;1621.92&#x27;, &#x27;isPaid&#x27;: False, &#x27;paidAt&#x27;: None, &#x27;isDeliver&#x27;: False, &#x27;deliveredAt&#x27;: None, &#x27;createdAt&#x27;: &#x27;2024-03-25T18:02:45.100675+05:30&#x27;, &#x27;user&#x27;: 8}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/test_Runner.py::gridtest_PlaceOrder::test_run_MyTest</td>
+          <td class="col-duration">11.77</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/test_Runner.py::TestReview_item_test::test_get_product_page</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/test_Runner.py::gridtest_review::test_run_MyTest</td>
+          <td class="col-duration">12.07</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Test run encountered an exception: Message: Browsing context has been discarded
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:678:5
+assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
+GeckoDriver.prototype.findElement@chrome://remote/content/marionette/driver.sys.mjs:1485:15
+despatch@chrome://remote/content/marionette/server.sys.mjs:318:40
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/&lt;@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+Test run encountered an exception: Message: Failed to decode response from marionette
+
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/test_Runner.py::TestOtakuHouseProfilePage::test_update_profile_mail</td>
+          <td class="col-duration">0.20</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTYxOTg5LCJqdGkiOiJiNDVlNWQwZjlkMzQ0ZGUxYTMzZjgyMWY4ZmRkNDEzZCIsInVzZXJfaWQiOjh9.Jq2qLPSHXOWZZPI4klcrb9IE7k3XYDESHMERfhhz3pw&#x27;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/test_Runner.py::TestOtakuHouseProfilePage::test_update_profile_name</td>
+          <td class="col-duration">0.19</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khalidddddd&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTYxOTg5LCJqdGkiOiIzOTJiNzNjNTgzNDg0MGIyYmE3NWEzYWI4ZWIwMTJlNSIsInVzZXJfaWQiOjh9.uTto_2LUpC1rpqSczwIvV9PiD9sSQygNXPfXdOhPHAA&#x27;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/test_Runner.py::TestOtakuHouseProfilePage::test_update_profile_password</td>
+          <td class="col-duration">0.19</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTYxOTg5LCJqdGkiOiI3MjA1NzIxY2MwMmQ0NzIzOTgzYmU3ZjRmNmFiYWZjOCIsInVzZXJfaWQiOjh9.-_-TB104jLaUxxEeIJX-XCRVyXVZX4q-QZ9VkS_BW2s&#x27;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/test_Runner.py::gridtest_update::test_run_MyTest</td>
+          <td class="col-duration">7.62</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Test run encountered an exception: Message: WebDriver session does not exist, or is not active
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+InvalidSessionIDError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:447:5
+assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
+assert.session@chrome://remote/content/shared/webdriver/Assert.sys.mjs:37:4
+despatch@chrome://remote/content/marionette/server.sys.mjs:315:19
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/&lt;@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+Test run encountered an exception: Message: Failed to decode response from marionette
+
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/test_Runner.py::test_run_suite</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
