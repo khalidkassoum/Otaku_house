@@ -28,14 +28,19 @@ pipeline {
                 }
             }
         }
-        stage('Run Tests') {
-            steps {
-                script {
-                    bat "call ${VENV_DIR}\\Scripts\\activate"
-                    bat "set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT} && pytest ${VENV_DIR}\\Scripts\\python ${PROJECT_ROOT}\\test_Runner.py --html=report.html"
-                }
-            }
+       stage('Run Tests') {
+        steps {
+          script {
+            // Combining the commands into a single 'bat' invocation
+            bat """
+            call ${VENV_DIR}\\Scripts\\activate
+            set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT}
+            ${VENV_DIR}\\Scripts\\python -m pytest ${PROJECT_ROOT}\\test_Runner.py --html=${PROJECT_ROOT}\\${HTML_REPORT_DIR}\\report.html
+            """
         }
+    }
+}
+
         stage('List Report') {
             steps {
                 script {
