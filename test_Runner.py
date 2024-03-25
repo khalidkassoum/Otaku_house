@@ -29,6 +29,6 @@ def test_run_third_suite():
 
 if __name__ == "__main__":
     test_run_suite()
-    test_run_second_suite()
-    test_run_third_suite()
+    # test_run_second_suite()
+    # test_run_third_suite()
 

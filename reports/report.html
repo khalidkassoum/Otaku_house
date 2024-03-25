@@ -3,193 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>Test Report</title>
-    <style>body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  /* do not increase min-width as some may use split screens */
-  min-width: 800px;
-  color: #999;
-}
-
-h1 {
-  font-size: 24px;
-  color: black;
-}
-
-h2 {
-  font-size: 16px;
-  color: black;
-}
-
-p {
-  color: black;
-}
-
-a {
-  color: #999;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-/******************************
- * SUMMARY INFORMATION
- ******************************/
-#environment td {
-  padding: 5px;
-  border: 1px solid #E6E6E6;
-}
-#environment tr:nth-child(odd) {
-  background-color: #f6f6f6;
-}
-
-/******************************
- * TEST RESULT COLORS
- ******************************/
-span.passed,
-.passed .col-result {
-  color: green;
-}
-
-span.skipped,
-span.xfailed,
-span.rerun,
-.skipped .col-result,
-.xfailed .col-result,
-.rerun .col-result {
-  color: orange;
-}
-
-span.error,
-span.failed,
-span.xpassed,
-.error .col-result,
-.failed .col-result,
-.xpassed .col-result {
-  color: red;
-}
-
-/******************************
- * RESULTS TABLE
- *
- * 1. Table Layout
- * 2. Extra
- * 3. Sorting items
- *
- ******************************/
-/*------------------
- * 1. Table Layout
- *------------------*/
-#results-table {
-  border: 1px solid #e6e6e6;
-  color: #999;
-  font-size: 12px;
-  width: 100%;
-}
-#results-table th,
-#results-table td {
-  padding: 5px;
-  border: 1px solid #E6E6E6;
-  text-align: left;
-}
-#results-table th {
-  font-weight: bold;
-}
-
-/*------------------
- * 2. Extra
- *------------------*/
-.log {
-  background-color: #e6e6e6;
-  border: 1px solid #e6e6e6;
-  color: black;
-  display: block;
-  font-family: "Courier New", Courier, monospace;
-  height: 230px;
-  overflow-y: scroll;
-  padding: 5px;
-  white-space: pre-wrap;
-}
-.log:only-child {
-  height: inherit;
-}
-
-div.image {
-  border: 1px solid #e6e6e6;
-  float: right;
-  height: 240px;
-  margin-left: 5px;
-  overflow: hidden;
-  width: 320px;
-}
-div.image img {
-  width: 320px;
-}
-
-div.video {
-  border: 1px solid #e6e6e6;
-  float: right;
-  height: 240px;
-  margin-left: 5px;
-  overflow: hidden;
-  width: 320px;
-}
-div.video video {
-  overflow: hidden;
-  width: 320px;
-  height: 240px;
-}
-
-.collapsed {
-  display: none;
-}
-
-.expander::after {
-  content: " (show details)";
-  color: #BBB;
-  font-style: italic;
-  cursor: pointer;
-}
-
-.collapser::after {
-  content: " (hide details)";
-  color: #BBB;
-  font-style: italic;
-  cursor: pointer;
-}
-
-/*------------------
- * 3. Sorting items
- *------------------*/
-.sortable {
-  cursor: pointer;
-}
-
-.sort-icon {
-  font-size: 0px;
-  float: left;
-  margin-right: 5px;
-  margin-top: 5px;
-  /*triangle*/
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-}
-.inactive .sort-icon {
-  /*finish triangle*/
-  border-top: 8px solid #E6E6E6;
-}
-.asc.active .sort-icon {
-  /*finish triangle*/
-  border-bottom: 8px solid #999;
-}
-.desc.active .sort-icon {
-  /*finish triangle*/
-  border-top: 8px solid #999;
-}
-</style></head>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
   <body onLoad="init()">
     <script>/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
@@ -429,10 +243,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 24-Mar-2024 at 17:38:54 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 25-Mar-2024 at 13:45:56 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Summary</h2>
-    <p>0 tests ran in 0.01 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>12 tests ran in 365.17 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">11 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -442,4 +256,186 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable" col="duration">Duration</th>
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead></table></body></html>
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::TestReview_item_test::test_review_item</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;tests.tests_api.review_item_api.TestReview_item_test testMethod=test_review_item&gt;<br/><br/>    def test_review_item(self):<br/>        self.response = self.otaku_house_review.choosing_product(self.otaku_house_review.rating,self.otaku_house_review.review_txt,self.otaku_house_review.product_id)<br/>&gt;       self.assertEqual(self.response.status_code, 200)<br/><span class="error">E       AssertionError: 400 != 200</span><br/><br/>C:\Users\Owner\PycharmProjects\Otaku_house\tests\tests_api\review_item_api.py:21: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;detail&#x27;: &#x27;Product already reviewed&#x27;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::Test_place_order::test_place_order</td>
+          <td class="col-duration">0.35</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;_id&#x27;: 61, &#x27;orderItems&#x27;: [{&#x27;_id&#x27;: 66, &#x27;name&#x27;: &#x27;Bleach - Ichigo Kurosaki Honor T-Shirt&#x27;, &#x27;qty&#x27;: 1, &#x27;price&#x27;: &#x27;1499.00&#x27;, &#x27;image&#x27;: &#x27;/media/images/ichigo_shirt.jpg&#x27;, &#x27;product&#x27;: 21, &#x27;order&#x27;: 61}], &#x27;shippingAddress&#x27;: {&#x27;_id&#x27;: 60, &#x27;address&#x27;: &#x27;sakhnin&#x27;, &#x27;city&#x27;: &#x27;sakhnin&#x27;, &#x27;postalCode&#x27;: &#x27;308100&#x27;, &#x27;country&#x27;: &#x27;israel&#x27;, &#x27;shippingPrice&#x27;: None, &#x27;order&#x27;: 61}, &#x27;User&#x27;: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False}, &#x27;paymentMethod&#x27;: &#x27;PayPal&#x27;, &#x27;taxPrice&#x27;: &#x27;122.92&#x27;, &#x27;shippingPrice&#x27;: &#x27;0.00&#x27;, &#x27;totalPrice&#x27;: &#x27;1621.92&#x27;, &#x27;isPaid&#x27;: False, &#x27;paidAt&#x27;: None, &#x27;isDeliver&#x27;: False, &#x27;deliveredAt&#x27;: None, &#x27;createdAt&#x27;: &#x27;2024-03-25T17:09:52.004898+05:30&#x27;, &#x27;user&#x27;: 8}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::gridtest_PlaceOrder::test_run_MyTest</td>
+          <td class="col-duration">14.50</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>WARNING  urllib3.connectionpool:connectionpool.py:323 Connection pool is full, discarding connection: localhost. Connection pool size: 1<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::TestReview_item_test::test_get_product_page</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::gridtest_review::test_run_MyTest</td>
+          <td class="col-duration">23.02</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Test run encountered an exception: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:510:5
+dom.find/&lt;/&lt;@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+Test run encountered an exception: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:510:5
+dom.find/&lt;/&lt;@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+<br/> -------------------------------Captured log call-------------------------------- <br/>WARNING  urllib3.connectionpool:connectionpool.py:323 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:323 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:323 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:323 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:323 Connection pool is full, discarding connection: localhost. Connection pool size: 1<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::TestOtakuHouseProfilePage::test_update_profile_mail</td>
+          <td class="col-duration">0.23</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTU4ODMwLCJqdGkiOiIzNmY4ZWY5MjllODY0ZDY2ODg1NGMxOWZkMDYzMDZlYyIsInVzZXJfaWQiOjh9.Toa7YEzoQj9zKHBsPzJ_aXi9oAvrOdcLSy0TcKoLaec&#x27;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::TestOtakuHouseProfilePage::test_update_profile_name</td>
+          <td class="col-duration">0.22</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khalidddddd&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTU4ODMwLCJqdGkiOiI1ZTYzNGU4YWJiMzc0YjBhOTFlNTI5NDRhNzQyMDEyZCIsInVzZXJfaWQiOjh9.ME3X_OQaHCFOZnQc9zpzufe_mr4Vw9PaHhLYJuh1bos&#x27;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::TestOtakuHouseProfilePage::test_update_profile_password</td>
+          <td class="col-duration">0.24</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTU4ODMwLCJqdGkiOiIxNTBhYzM1YTBiY2I0MTU4OTU3MzQxNTI3OTM2NzM0ZiIsInVzZXJfaWQiOjh9.z4ZUJgRzNJyQn9GYt9eRi6gpOnDIcnlzPmDUqFcLUqc&#x27;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::gridtest_update::test_run_MyTest</td>
+          <td class="col-duration">14.08</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::test_run_suite</td>
+          <td class="col-duration">13.09</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;_id&#x27;: 62, &#x27;orderItems&#x27;: [{&#x27;_id&#x27;: 67, &#x27;name&#x27;: &#x27;Bleach - Ichigo Kurosaki Honor T-Shirt&#x27;, &#x27;qty&#x27;: 1, &#x27;price&#x27;: &#x27;1499.00&#x27;, &#x27;image&#x27;: &#x27;/media/images/ichigo_shirt.jpg&#x27;, &#x27;product&#x27;: 21, &#x27;order&#x27;: 62}], &#x27;shippingAddress&#x27;: {&#x27;_id&#x27;: 61, &#x27;address&#x27;: &#x27;sakhnin&#x27;, &#x27;city&#x27;: &#x27;sakhnin&#x27;, &#x27;postalCode&#x27;: &#x27;308100&#x27;, &#x27;country&#x27;: &#x27;israel&#x27;, &#x27;shippingPrice&#x27;: None, &#x27;order&#x27;: 62}, &#x27;User&#x27;: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False}, &#x27;paymentMethod&#x27;: &#x27;PayPal&#x27;, &#x27;taxPrice&#x27;: &#x27;122.92&#x27;, &#x27;shippingPrice&#x27;: &#x27;0.00&#x27;, &#x27;totalPrice&#x27;: &#x27;1621.92&#x27;, &#x27;isPaid&#x27;: False, &#x27;paidAt&#x27;: None, &#x27;isDeliver&#x27;: False, &#x27;deliveredAt&#x27;: None, &#x27;createdAt&#x27;: &#x27;2024-03-25T17:10:44.752904+05:30&#x27;, &#x27;user&#x27;: 8}
+<br/> ------------------------------Captured stderr call------------------------------ <br/>test_place_order (tests.tests_api.placeOrder_api.Test_place_order.test_place_order) ... ok
+test_run_MyTest (tests.tests_ui.place_order_ui.gridtest_PlaceOrder.test_run_MyTest) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 13.090s
+
+OK
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::test_run_second_suite</td>
+          <td class="col-duration">277.34</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;detail&#x27;: &#x27;Product already reviewed&#x27;}
+Test run encountered an exception: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:510:5
+dom.find/&lt;/&lt;@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+Test run encountered an exception: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:510:5
+dom.find/&lt;/&lt;@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+<br/> ------------------------------Captured stderr call------------------------------ <br/>test_get_product_page (tests.tests_api.review_item_api.TestReview_item_test.test_get_product_page) ... ok
+test_review_item (tests.tests_api.review_item_api.TestReview_item_test.test_review_item) ... FAIL
+test_run_MyTest (tests.tests_ui.review_ITEMM_UI.gridtest_review.test_run_MyTest) ... ok
+
+======================================================================
+FAIL: test_review_item (tests.tests_api.review_item_api.TestReview_item_test.test_review_item)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File &quot;C:\Users\Owner\PycharmProjects\Otaku_house\tests\tests_api\review_item_api.py&quot;, line 21, in test_review_item
+    self.assertEqual(self.response.status_code, 200)
+AssertionError: 400 != 200
+
+----------------------------------------------------------------------
+Ran 3 tests in 277.338s
+
+FAILED (failures=1)
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::test_run_third_suite</td>
+          <td class="col-duration">21.11</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTU5MTM1LCJqdGkiOiJjYzg3NTMxODEyZWM0ZDhiYWQyZmEzNjVlM2JiOGNlYSIsInVzZXJfaWQiOjh9.p_P0ommP9N6LtV-HonDe-bFhbYgz5NQKLr1RUuUkCNs&#x27;}
+Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khalidddddd&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTU5MTM1LCJqdGkiOiJjMDgxZTY0NmI0ZjM0YjU0OWEyMTVlYTcxYzA0NjNiYyIsInVzZXJfaWQiOjh9.wBoAx9Gf73Lu4IWvEVB8KM2WpzKsaZTyman1dtcmuBo&#x27;}
+Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTU5MTM1LCJqdGkiOiI3MWM4ZmMxYmYyODA0ZTQ3YjJkNTI2ZjZmYmQ5MjUyNSIsInVzZXJfaWQiOjh9.2yAUknLrzYQBvmtiexhtNhriZtyJpxuCRTQYeapoFJ8&#x27;}
+<br/> ------------------------------Captured stderr call------------------------------ <br/>test_update_profile_mail (tests.tests_api.updateProfile_testAPI.TestOtakuHouseProfilePage.test_update_profile_mail) ... ok
+test_update_profile_name (tests.tests_api.updateProfile_testAPI.TestOtakuHouseProfilePage.test_update_profile_name) ... ok
+test_update_profile_password (tests.tests_api.updateProfile_testAPI.TestOtakuHouseProfilePage.test_update_profile_password) ... ok
+test_run_MyTest (tests.tests_ui.UPDATEprofile_test.gridtest_update.test_run_MyTest) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 21.113s
+
+OK
+<br/></div></td></tr></tbody></table></body></html>
