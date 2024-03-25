@@ -243,10 +243,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 25-Mar-2024 at 14:23:38 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 25-Mar-2024 at 14:26:23 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Summary</h2>
-    <p>10 tests ran in 240.98 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">9 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>1 tests ran in 0.31 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -257,154 +257,13 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::TestReview_item_test::test_review_item</td>
-          <td class="col-duration">0.01</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;tests.tests_api.review_item_api.TestReview_item_test testMethod=test_review_item&gt;<br/><br/>    def test_review_item(self):<br/>        self.response = self.otaku_house_review.choosing_product(self.otaku_house_review.rating,self.otaku_house_review.review_txt,self.otaku_house_review.product_id)<br/>&gt;       self.assertEqual(self.response.status_code, 200)<br/><span class="error">E       AssertionError: 400 != 200</span><br/><br/>C:\Users\Owner\PycharmProjects\Otaku_house\tests\tests_api\review_item_api.py:21: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;detail&#x27;: &#x27;Product already reviewed&#x27;}
-<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::Test_place_order::test_place_order</td>
-          <td class="col-duration">0.02</td>
+          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/tests/tests_api/placeOrder_api.py::Test_place_order::test_place_order</td>
+          <td class="col-duration">0.04</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;_id&#x27;: 72, &#x27;orderItems&#x27;: [{&#x27;_id&#x27;: 77, &#x27;name&#x27;: &#x27;Bleach - Ichigo Kurosaki Honor T-Shirt&#x27;, &#x27;qty&#x27;: 1, &#x27;price&#x27;: &#x27;1499.00&#x27;, &#x27;image&#x27;: &#x27;/media/images/ichigo_shirt.jpg&#x27;, &#x27;product&#x27;: 21, &#x27;order&#x27;: 72}], &#x27;shippingAddress&#x27;: {&#x27;_id&#x27;: 71, &#x27;address&#x27;: &#x27;sakhnin&#x27;, &#x27;city&#x27;: &#x27;sakhnin&#x27;, &#x27;postalCode&#x27;: &#x27;308100&#x27;, &#x27;country&#x27;: &#x27;israel&#x27;, &#x27;shippingPrice&#x27;: None, &#x27;order&#x27;: 72}, &#x27;User&#x27;: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False}, &#x27;paymentMethod&#x27;: &#x27;PayPal&#x27;, &#x27;taxPrice&#x27;: &#x27;122.92&#x27;, &#x27;shippingPrice&#x27;: &#x27;0.00&#x27;, &#x27;totalPrice&#x27;: &#x27;1621.92&#x27;, &#x27;isPaid&#x27;: False, &#x27;paidAt&#x27;: None, &#x27;isDeliver&#x27;: False, &#x27;deliveredAt&#x27;: None, &#x27;createdAt&#x27;: &#x27;2024-03-25T17:49:38.099333+05:30&#x27;, &#x27;user&#x27;: 8}
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::gridtest_PlaceOrder::test_run_MyTest</td>
-          <td class="col-duration">195.52</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::TestReview_item_test::test_get_product_page</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::gridtest_review::test_run_MyTest</td>
-          <td class="col-duration">21.76</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Test run encountered an exception: Message: 
-Stacktrace:
-	GetHandleVerifier [0x00007FF61CC77062+63090]
-	(No symbol) [0x00007FF61CBE2CB2]
-	(No symbol) [0x00007FF61CA7EC65]
-	(No symbol) [0x00007FF61CAC499D]
-	(No symbol) [0x00007FF61CAC4ADC]
-	(No symbol) [0x00007FF61CB05B37]
-	(No symbol) [0x00007FF61CAE701F]
-	(No symbol) [0x00007FF61CB03412]
-	(No symbol) [0x00007FF61CAE6D83]
-	(No symbol) [0x00007FF61CAB83A8]
-	(No symbol) [0x00007FF61CAB9441]
-	GetHandleVerifier [0x00007FF61D0725CD+4238301]
-	GetHandleVerifier [0x00007FF61D0AF72D+4488509]
-	GetHandleVerifier [0x00007FF61D0A7A0F+4456479]
-	GetHandleVerifier [0x00007FF61CD505A6+953270]
-	(No symbol) [0x00007FF61CBEE57F]
-	(No symbol) [0x00007FF61CBE9254]
-	(No symbol) [0x00007FF61CBE938B]
-	(No symbol) [0x00007FF61CBD9BC4]
-	BaseThreadInitThunk [0x00007FF87C8B7344+20]
-	RtlUserThreadStart [0x00007FF87CFE26B1+33]
-
-Test run encountered an exception: Message: 
-Stacktrace:
-	GetHandleVerifier [0x00007FF61CC77062+63090]
-	(No symbol) [0x00007FF61CBE2CB2]
-	(No symbol) [0x00007FF61CA7EC65]
-	(No symbol) [0x00007FF61CAC499D]
-	(No symbol) [0x00007FF61CAC4ADC]
-	(No symbol) [0x00007FF61CB05B37]
-	(No symbol) [0x00007FF61CAE701F]
-	(No symbol) [0x00007FF61CB03412]
-	(No symbol) [0x00007FF61CAE6D83]
-	(No symbol) [0x00007FF61CAB83A8]
-	(No symbol) [0x00007FF61CAB9441]
-	GetHandleVerifier [0x00007FF61D0725CD+4238301]
-	GetHandleVerifier [0x00007FF61D0AF72D+4488509]
-	GetHandleVerifier [0x00007FF61D0A7A0F+4456479]
-	GetHandleVerifier [0x00007FF61CD505A6+953270]
-	(No symbol) [0x00007FF61CBEE57F]
-	(No symbol) [0x00007FF61CBE9254]
-	(No symbol) [0x00007FF61CBE938B]
-	(No symbol) [0x00007FF61CBD9BC4]
-	BaseThreadInitThunk [0x00007FF87C8B7344+20]
-	RtlUserThreadStart [0x00007FF87CFE26B1+33]
-
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::TestOtakuHouseProfilePage::test_update_profile_mail</td>
-          <td class="col-duration">0.19</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTYxMzk1LCJqdGkiOiI0MmYzN2Y5OTlkOTY0MDg4ODgwZjhkNTU1YjNjY2VjNyIsInVzZXJfaWQiOjh9.HaaLOsToOs9ayo7i9m0E_Bl_KPrTgCY3qzFV0GTFio8&#x27;}
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::TestOtakuHouseProfilePage::test_update_profile_name</td>
-          <td class="col-duration">0.19</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khalidddddd&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTYxMzk1LCJqdGkiOiIxMzc5MDZhZjhjMmE0YjY1YjJkZWU5NWYxYTM5MmNiYyIsInVzZXJfaWQiOjh9.MnuTmh4CoUnKiT5GZA_OhWaekRExtOumlh1tH8lA7tM&#x27;}
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::TestOtakuHouseProfilePage::test_update_profile_password</td>
-          <td class="col-duration">0.19</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False, &#x27;token&#x27;: &#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzOTYxMzk2LCJqdGkiOiI3YjQ2YmY5MDFkYjk0MzcyOWI0ODhiZjJmOWNlNWMyMiIsInVzZXJfaWQiOjh9.ZHp7pr2n351GYoDPG54_1zcuvfp1mtxwmdDWLFsXc0Q&#x27;}
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::gridtest_update::test_run_MyTest</td>
-          <td class="col-duration">10.13</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Users/Owner/PycharmProjects/Otaku_house/test_Runner.py::test_run_suite</td>
-          <td class="col-duration">12.38</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;_id&#x27;: 73, &#x27;orderItems&#x27;: [{&#x27;_id&#x27;: 78, &#x27;name&#x27;: &#x27;Bleach - Ichigo Kurosaki Honor T-Shirt&#x27;, &#x27;qty&#x27;: 1, &#x27;price&#x27;: &#x27;1499.00&#x27;, &#x27;image&#x27;: &#x27;/media/images/ichigo_shirt.jpg&#x27;, &#x27;product&#x27;: 21, &#x27;order&#x27;: 73}], &#x27;shippingAddress&#x27;: {&#x27;_id&#x27;: 72, &#x27;address&#x27;: &#x27;sakhnin&#x27;, &#x27;city&#x27;: &#x27;sakhnin&#x27;, &#x27;postalCode&#x27;: &#x27;308100&#x27;, &#x27;country&#x27;: &#x27;israel&#x27;, &#x27;shippingPrice&#x27;: None, &#x27;order&#x27;: 73}, &#x27;User&#x27;: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False}, &#x27;paymentMethod&#x27;: &#x27;PayPal&#x27;, &#x27;taxPrice&#x27;: &#x27;122.92&#x27;, &#x27;shippingPrice&#x27;: &#x27;0.00&#x27;, &#x27;totalPrice&#x27;: &#x27;1621.92&#x27;, &#x27;isPaid&#x27;: False, &#x27;paidAt&#x27;: None, &#x27;isDeliver&#x27;: False, &#x27;deliveredAt&#x27;: None, &#x27;createdAt&#x27;: &#x27;2024-03-25T17:53:26.259833+05:30&#x27;, &#x27;user&#x27;: 8}
-<br/> ------------------------------Captured stderr call------------------------------ <br/>test_place_order (tests.tests_api.placeOrder_api.Test_place_order.test_place_order) ... ok
-test_run_MyTest (tests.tests_ui.place_order_ui.gridtest_PlaceOrder.test_run_MyTest) ... ok
-
-----------------------------------------------------------------------
-Ran 2 tests in 12.385s
-
-OK
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Choosing Product Response JSON: {&#x27;_id&#x27;: 74, &#x27;orderItems&#x27;: [{&#x27;_id&#x27;: 79, &#x27;name&#x27;: &#x27;Bleach - Ichigo Kurosaki Honor T-Shirt&#x27;, &#x27;qty&#x27;: 1, &#x27;price&#x27;: &#x27;1499.00&#x27;, &#x27;image&#x27;: &#x27;/media/images/ichigo_shirt.jpg&#x27;, &#x27;product&#x27;: 21, &#x27;order&#x27;: 74}], &#x27;shippingAddress&#x27;: {&#x27;_id&#x27;: 73, &#x27;address&#x27;: &#x27;sakhnin&#x27;, &#x27;city&#x27;: &#x27;sakhnin&#x27;, &#x27;postalCode&#x27;: &#x27;308100&#x27;, &#x27;country&#x27;: &#x27;israel&#x27;, &#x27;shippingPrice&#x27;: None, &#x27;order&#x27;: 74}, &#x27;User&#x27;: {&#x27;id&#x27;: 8, &#x27;_id&#x27;: 8, &#x27;username&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;email&#x27;: &#x27;khalidkassom59@gmail.com&#x27;, &#x27;name&#x27;: &#x27;khaliid&#x27;, &#x27;isAdmin&#x27;: False}, &#x27;paymentMethod&#x27;: &#x27;PayPal&#x27;, &#x27;taxPrice&#x27;: &#x27;122.92&#x27;, &#x27;shippingPrice&#x27;: &#x27;0.00&#x27;, &#x27;totalPrice&#x27;: &#x27;1621.92&#x27;, &#x27;isPaid&#x27;: False, &#x27;paidAt&#x27;: None, &#x27;isDeliver&#x27;: False, &#x27;deliveredAt&#x27;: None, &#x27;createdAt&#x27;: &#x27;2024-03-25T17:56:23.369830+05:30&#x27;, &#x27;user&#x27;: 8}
 <br/></div></td></tr></tbody></table></body></html>
