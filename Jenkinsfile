@@ -35,7 +35,7 @@ pipeline {
             bat """
             call ${VENV_DIR}\\Scripts\\activate
             set PYTHONPATH=%PYTHONPATH%;${PROJECT_ROOT}
-            ${VENV_DIR}\\Scripts\\python -m pytest ${PROJECT_ROOT}\\test_Runner.py --html=${PROJECT_ROOT}\\${HTML_REPORT_DIR}\\report.html
+            ${VENV_DIR}\\Scripts\\python -m pytest ${PROJECT_ROOT}\\tests\\tests_api\\placeOrder_api.py --html=${PROJECT_ROOT}\\${HTML_REPORT_DIR}\\report.html
             """
         }
     }
